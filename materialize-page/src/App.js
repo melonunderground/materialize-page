@@ -15,6 +15,7 @@ class App extends Component {
 
     }
   }
+  
   componentDidMount() {
     fetch("https://www.eventbriteapi.com/v3/events/search/?token=" + token + "&q=austin_music")
       .then(results => results.json())
