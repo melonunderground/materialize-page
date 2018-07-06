@@ -40,7 +40,6 @@ class App extends Component {
         <p>hallo</p>
         <p> {this.state.description} </p>
       </div>
-
     )
   }
 }
