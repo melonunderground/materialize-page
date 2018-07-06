@@ -12,6 +12,8 @@ class App extends Component {
     super(props)
     this.state = {
       events: [],
+      name: null,
+      url: null
 
     }
   }
@@ -39,7 +41,6 @@ class App extends Component {
         <p>hallo</p>
         <p> {this.state.description} </p>
       </div>
-
     )
   }
 }
