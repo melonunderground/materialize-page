@@ -12,9 +12,12 @@ class App extends Component {
     super(props)
     this.state = {
       events: [],
+      name: null,
+      url: null
 
     }
   }
+  
   componentDidMount() {
     fetch("https://www.eventbriteapi.com/v3/events/search/?token=" + token + "&q=austin_music")
       .then(results => results.json())
@@ -38,7 +41,6 @@ class App extends Component {
         <p>hallo</p>
         <p> {this.state.description} </p>
       </div>
-
     )
   }
 }
